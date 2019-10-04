@@ -1,24 +1,35 @@
 p,
 td,
-li {
-  font-family: "Open Sans", sans-serif;
+li,
+th {
+ font-family: 'Source Sans Pro', sans-serif;
+ color: #cccccc;
 }
 
-h1,
-h2 {
-  text-align: center;
-  font-family: "Raleway", sans-serif;
+h1 {
+  text-align: left;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
+  font-size: 65px;
+  color: #ffdd00;
 }
+
+h2 {
+    text-align: left;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: #cccccc;
+  }
 
 body {
-  background: #42adf5;
+  background: grey;
   text-align: justify;
 }
 
 nav {
- background: #E8A60C;
- Width: 50%;
+ background: #303030;
+ Width: 65%;
  margin: 0 auto;
  padding: 0 100px;
 }
@@ -35,29 +46,37 @@ nav li {
   display: inline-block;
   line-height: 50px;
   padding: 0 20px;
-  float: center;
+  float: center
 }
 
 nav a {
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
 }
 
 nav a:hover {
-  color: #E9E9E9;
-  border-bottom: 1px solid #000000;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 
 #logo {
   float: center;
-  background: #52140D;
-  color: #E9E9E9;
+  background: #ffdd00;
+  color: #000000;
+  font-weight: bold;
   font-family: 'Open Sans', sans-serif;
+}
+
+#main {
+  width: 65%;
+  background: #303030;
+  margin: 20px auto;
+  padding: 20px 100px;
 }
 
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
+  width: 65%;
 }
