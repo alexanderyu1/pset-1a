@@ -16,7 +16,7 @@ h1 {
   text-transform: uppercase;
 }
 
-h2 {
+h2, h4 {
     text-align: left;
     font-family: monospace;
     font-weight: bold;
@@ -199,6 +199,27 @@ input[type='checkbox'] {
   padding: .5rem 1rem;
 }
 
+i {
+  border: solid #cccccc;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 10px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.eqtpics {
+  height: 20%;
+  width: 20%;
+}
+
 a[title] {
   color: #cccccc;
+}
+
+A[title]:hover {
+  color: #ffdd00;
 }
