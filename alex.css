@@ -1,5 +1,9 @@
 /* stuff for the body */
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
   color: #ffdd00;
 }
