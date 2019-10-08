@@ -23,7 +23,8 @@ h1 {
   text-transform: uppercase;
 }
 
-h2, h4 {
+h2,
+h4 {
     text-align: left;
     font-family: monospace;
     font-weight: bold;
