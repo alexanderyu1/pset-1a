@@ -1,0 +1,266 @@
+/* stuff for the body */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+  color: #ffdd00;
+}
+
+p,
+td,
+li,
+th,
+em {
+ font-family: monospace;
+ color: #cccccc;
+ font-size: 15px;
+}
+
+h1 {
+  text-align: left;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 65px;
+  color: #ffdd00;
+  text-transform: uppercase;
+}
+
+h2,
+h4 {
+    text-align: left;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 25px;
+    color: #cccccc;
+  }
+
+body {
+  background: #303030;
+  text-align: left;
+}
+
+#main {
+  width: 1100px;
+  margin: 0px auto;
+  height: 900px;
+}
+
+/* stuff for nav bar */
+
+nav {
+ background: #303030;
+ padding: 0px 0px 0px 0px;
+ position: fixed;
+ top: 0;
+}
+
+#header {
+  width: 1100px;
+  margin: 0 auto;
+  margin-top: 51px;
+  background: #303030;
+}
+
+nav ul {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+}
+
+nav li {
+  display: inline-block;
+  line-height: 50px;
+  padding: 0 20px;
+  float: center;
+  font-size: 21px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav a:hover {
+  color: #ffdd00;
+  font-weight: bold;
+}
+
+#logo {
+  float: center;
+  background: #ffdd00;
+  color: #303030;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+/*stuff for image on home page */
+
+.parallax {
+  background-image: url("Images/massialas.jpg");
+  height: 50%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.parallaxfix {
+  margin: 0px 0px 0px 0px;
+}
+
+/*stuff for table in basic footwork/blade actions*/
+
+#container {
+	max-width: 1000px;
+	margin-right: auto;
+	margin-left: 0;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	min-height: 10vh;
+  font-size: 25px;
+}
+
+#table {
+width: 45%;
+color: #ffdd00;
+}
+
+#table-header {
+display: flex;
+width: 75%;
+background: #ffdd00;
+padding: 10px 0;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 2px solid #ffdd00;
+  border-right: 2px solid #ffdd00;
+  border-left: 2px solid #ffdd00;
+  font-size: 15px;
+}
+
+/*stuff for drop down content in the three weapons*/
+
+.wrap-collabsible {
+  margin-bottom: 1.2rem 0;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.lbl-toggle {
+  display: block;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+
+  padding: 1rem;
+
+  color: #A77B0E;
+  background: #FAE042;
+
+  cursor: pointer;
+
+  border-radius: 7px;
+  transition: all 0.25s ease-out;
+}
+
+.lbl-toggle:hover {
+  color: #7C5A0B;
+}
+
+.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+
+  transition: transform .2s ease-out;
+}
+
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 1000px;
+}
+
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.collapsible-content .content-inner {
+  background: rgba(250, 224, 66, .2);
+  border-bottom: 1px solid rgba(250, 224, 66, .45);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: .5rem 1rem;
+}
+
+/*arrow on home page */
+
+i {
+  border: solid #cccccc;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 10px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/*stuff for trying to get the li on equipment page to go horizontal*/
+
+.eqtpics {
+  height: 20%;
+  width: 20%;
+}
+
+.store {
+	display: table;
+	margin: 0 auto;
+}
+
+ul#horizontal-list {
+	min-width: 696px;
+	list-style: none;
+	padding-top: 20px;
+}
+
+ul#horizontal-list li {
+		display: inline;
+}
+
+/*attributes*/
+
+a[title] {
+  color: #cccccc;
+}
+
+A[title]:hover {
+  color: #ffdd00;
+}
